@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  border: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #11267a;
+  color: white;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header,
+.header nav,
+.header ul {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  align-items: flex-start;
+  margin-right: 30px;
+}
+
+li {
+  margin: 0 15px;
+}
+
+.signup {
+  padding: 10px 20px;
+}
+
+#cc {
+  margin-right: 20px;
+}
+
+.logo {
+  margin-left: 40px;
+}
+.signup {
+  margin-right: 60px;
+}
+
+main.hero {
+  /* width: 100vw; */
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #2462d3;
+  color: white;
+}
+
+.hero-image,
+.text-content {
+  flex: 1;
+}
+
+.text-content {
+  color: white;
+  text-align: center;
+}
+
+.text-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  margin: 0 20px;
+}
+
+.hero-image {
+  margin-left: 100px;
+}
+
+button.pricing {
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin: 30px 20px;
+}
+
+.pricing-chose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px 25px; */
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 368px;
+  /* width: 555px; */
+  padding: 1.5px 0;
+  margin: 30px auto;
+}
+
+.pricing-chose .active {
+  background-color: #2462d3;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.shared {
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.cloud {
+  margin-left: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.container {
+  margin: auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-container {
+  color: hsl(234, 14%, 74%);
+  margin-bottom: 40px;
+}
+
+.price-box {
+  background-color: #fff;
+  background: rgba(42, 107, 226, 0.938);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: hsl(233, 13%, 49%);
+  padding: 30px;
+  margin: 10px;
+  color: white;
+}
+
+.price-box .annually,
+.price-box .monthly{
+  text-align: center;
+  font-size: 45px;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.price-box h4{
+
+}
+
+.price-box.price-box-premium {
+
+  background: rgb(36, 98, 211);
+  color: #fff;
+  transform: scale(1.15);
+}
+
+.price-box.price-box-premium > * {
+  transform: scale(0.869);
+}
+
+.price-box h4 {
+  margin: 0;
+}
+
+.price-box p {
+  /* color: hsl(232, 13%, 33%); */
+  font-size: 4em;
+  margin: 15px 0;
+  width: 250px;
+}
+
+.price-box .monthly {
+  display: none;
+}
+
+.show-monthly .price-box .monthly {
+  display: block;
+}
+
+.show-monthly .price-box .annually {
+  display: none;
+}
+
+.price-box ul {
+  border-top: 1px solid hsl(234, 14%, 74%);
+  padding: 0;
+  list-style-type: none;
+}
+
+.price-box ul li {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.price-box button {
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: black;
+
+}
+
+.price-box.price-box-premium button {
+  background-image: none;
+  background-color: black;
+}
+
+.price-box.price-box-premium h4 {
+  font-size: 28px;
+}
+
+.price-box.price-box-premium ul,
+.price-box.price-box-premium ul li {
+  border-color: #f0f0f0;
+}
+.price-box.price-box-premium p {
+  color: #fff;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-container > span {
+  color: black;
+}
+
+.toggle-container label {
+  background: rgb(36, 98, 211);
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  height: 30px;
+  width: 60px;
+}
+
+.toggle-container label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  height: 25px;
+  width: 25px;
+  transition: transform 0.4s ease;
+}
+
+.toggle-container input {
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle-container input:checked + label .ball {
+  transform: translateX(30px);
+}
+
+@media screen and (max-width: 930px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .price-box.price-box-premium {
+    transform: scale(1);
+  }
+
+  .price-box.price-box-premium > * {
+    transform: scale(1);
+  }
+}
