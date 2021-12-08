@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -25,7 +32,8 @@
           <li>Contact</li>
         </ul>
 
-        <img src="images/india.png" alt="" height="36" id="cc" />
+        <!-- <img src="images/india.png" alt="" height="36" id="cc3" /> -->
+        <div id="cc"></div>
 
         <button class="signup">Log In</button>
       </nav>
@@ -44,9 +52,6 @@
     </main>
 
     <section id="pricing">
-
-
-      
       <h2 class="center">Hosting Solution For Businesses of All Type</h2>
 
       <div class="pricing-main">
@@ -56,10 +61,7 @@
         </div>
       </div>
 
-
       <div class="container">
-        
-  
         <div class="toggle-container">
           <span>Annually</span>
           <span>
@@ -70,8 +72,8 @@
           </span>
           <span>Monthly</span>
         </div>
-  
-        <div id="flexy" class="flex">
+
+        <div id="flexy" class="flex sharedplan">
           <div class="price-box">
             <h4 class="center">Basic</h4>
             <p>
@@ -83,9 +85,9 @@
               <li>2 Users Allowed</li>
               <li>Send up to 3 GB</li>
             </ul>
-            <button>Learn More</button>
+            <button>Buy Now</button>
           </div>
-  
+
           <div class="price-box price-box-premium">
             <h4 class="center">Professional</h4>
             <p>
@@ -97,9 +99,9 @@
               <li>5 Users Allowed</li>
               <li>Send up to 10 GB</li>
             </ul>
-            <button>Learn More</button>
+            <button>Buy Now</button>
           </div>
-  
+
           <div class="price-box">
             <h4 class="center">Master</h4>
             <p>
@@ -111,26 +113,189 @@
               <li>10 Users Allowed</li>
               <li>Send up to 20 GB</li>
             </ul>
-            <button>Learn More</button>
+            <button>Buy Now</button>
+          </div>
+        </div>
+
+        <div id="flexy" class="flex cloudplan hidden">
+          <div class="price-box">
+            <h4 class="center">Basic Cloud</h4>
+            <p>
+              <span class="monthly"> &dollar;19.99 </span>
+              <span class="annually"> &dollar;199.99 </span>
+            </p>
+            <ul>
+              <li>500 GB Storage</li>
+              <li>2 Users Allowed</li>
+              <li>Send up to 3 GB</li>
+            </ul>
+            <button>Buy Now</button>
+          </div>
+
+          <div class="price-box price-box-premium">
+            <h4 class="center">Professional Cloud</h4>
+            <p>
+              <span class="monthly"> &dollar;24.99 </span>
+              <span class="annually"> &dollar;249.99 </span>
+            </p>
+            <ul>
+              <li>1 TB Storage</li>
+              <li>5 Users Allowed</li>
+              <li>Send up to 10 GB</li>
+            </ul>
+            <button>Buy Now</button>
+          </div>
+
+          <div class="price-box">
+            <h4 class="center">Master Cloud</h4>
+            <p>
+              <span class="monthly"> &dollar;39.99 </span>
+              <span class="annually"> &#8377;399.99 </span>
+            </p>
+            <ul>
+              <li>2 TB Storage</li>
+              <li>10 Users Allowed</li>
+              <li>Send up to 20 GB</li>
+            </ul>
+            <button>Buy Now</button>
           </div>
         </div>
       </div>
-
-      
     </section>
-    
-
 
     <section class="features">
-      
+      <section class="section-how">
+        <h2 class="center">Features</h2>
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">Fast</p>
+            <h3 class="heading-tertiary">Blazing Fast Hosting</h3>
+            <p class="step-description">
+              Blazing hosting powered by our litespeed webservers. We use
+              litespeed technology. We have implemented server side caching to
+              make your website load even faster.
+            </p>
+          </div>
 
+          <div class="step-img-box">
+            <img
+              src="images/speed.png"
+              class="step-img"
+              alt="iPhone app
+              preferences selection screen"
+            />
+          </div>
+
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              src="images/security.png"
+              class="step-img"
+              alt="iPhone app
+              meal approving plan screen"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">Secure</p>
+            <h3 class="heading-tertiary">Complete Security</h3>
+            <p class="step-description">
+              All our webservers use immunify-360, that means your website is
+              100% safe and secure. We look for threat every hour.
+            </p>
+          </div>
+
+          <!-- STEP 03 -->
+          <div class="step-text-box">
+            <p class="step-number">cPanel</p>
+            <h3 class="heading-tertiary">Best Control Panel</h3>
+            <p class="step-description">
+              We use cPanel to control and manage websites. cPanel is one of the
+              best control panel with the nice intuitive UI and is beginner
+              friendly.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="images/cpanel.jpg"
+              class="step-img"
+              alt="iPhone app
+              delivery screen"
+            />
+          </div>
+
+          <div class="step-img-box">
+            <img
+              src="images/support-.png"
+              class="step-img"
+              alt="iPhone app
+              delivery screen"
+            />
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-number">Support</p>
+            <h3 class="heading-tertiary">24/7 Professional</h3>
+            <p class="step-description">
+              Need support any time regarding any error or billing or have a
+              query? We are here 24/7 on live chat or email support.
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
 
+    <footer class="footer">
+      <div class="ft-container ft-grid grid--footer">
+        <div class="logo-col">
+          <h3 class="footer-heading">Follow Us on Social Media</h3>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-2x fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-2x fa-twitter"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank">
+            <i class="fa-brands fa-2x fa-youtube"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-2x fa-instagram"></i
+          ></a>
 
+          <p class="copyright">Copyright &copy; 2021 by FastHosting</p>
+        </div>
 
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">28/2 Naya Raipur, Chhattisgarh</p>
+            <p>
+              <a class="footer-link" href="tel:9340888888">9340888888</a><br />
+              <a class="footer-link" href="mailto:hello@fasthosting.com"
+                >hello@fasthosting.com</a
+              >
+            </p>
+          </address>
+        </div>
 
-    
- 
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Pricing </a></li>
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
   </body>
