@@ -31,7 +31,7 @@ h2 {
   font-size: 40px;
 }
 
-.hidden{
+.hidden {
   display: none !important;
 }
 
@@ -168,7 +168,7 @@ button.pricing {
   margin-bottom: 40px;
 }
 
-#pricing h2{
+#pricing h2 {
   margin: 40px;
 }
 
@@ -184,20 +184,17 @@ button.pricing {
 }
 
 .price-box .annually,
-.price-box .monthly{
+.price-box .monthly {
   text-align: center;
   font-size: 45px;
   margin: 0 auto;
   display: block;
-
 }
 
-.price-box h4{
-
+.price-box h4 {
 }
 
 .price-box.price-box-premium {
-
   background: rgb(36, 98, 211);
   color: #fff;
   transform: scale(1.15);
@@ -253,7 +250,6 @@ button.pricing {
   width: 100%;
   text-transform: uppercase;
   background-color: black;
-
 }
 
 .price-box.price-box-premium button {
@@ -328,9 +324,7 @@ button.pricing {
   }
 }
 
-
 .container {
-
   max-width: 1200px;
   padding: 0 32px;
   margin: 0 auto;
@@ -344,7 +338,6 @@ button.pricing {
   /* margin-bottom: 9.6rem; */
 }
 
-
 .grid:not(:last-child) {
   margin-bottom: 96px;
 }
@@ -352,7 +345,6 @@ button.pricing {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
-
 
 .grid--center-v {
   align-items: center;
@@ -383,8 +375,6 @@ button.pricing {
   justify-content: center;
 }
 
-
-
 .step-img {
   width: 80%;
 }
@@ -404,20 +394,17 @@ button.pricing {
   /* margin-bottom: 9.6rem; */
 }
 
-
 .footer {
   padding: 128px 0;
   border-top: 1px solid #eee;
   background: #11267a;
   color: white;
-    }
+}
 
 .grid--footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
   display: grid;
 }
-
-
 
 .social-links {
   list-style: none;
@@ -467,22 +454,130 @@ button.pricing {
   transition: all 0.3s;
 }
 
-
-i{
-    color: initial;
-    margin-right: 15px;
-    font-size: 2em;
+i {
+  color: initial;
+  margin-right: 15px;
+  font-size: 2em;
 }
 
-.fa-2x{
-    font-size: 2.3em !important;
-    color: white;
+.fa-2x {
+  font-size: 2.3em !important;
+  color: white;
 }
 
-#cc{
+#cc {
   height: 36px;
 }
 
-#cc img{
+#cc img {
   height: 36px;
+}
+
+/* Domains Page */
+
+#domains{
+  min-height: 80vh;
+}
+
+.d-textarea {
+  /* color: white;
+  background: rgb(36, 98, 211); */
+}
+
+.d-textarea > h2 {
+  padding-top: 100px;
+}
+
+.d-textarea > p {
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+input[type="text"],
+select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.whois {
+  margin: 10px 50px;
+}
+
+
+#getdomain {
+  padding: 15px 25px;
+  border: none;
+  background-color: green;
+  background-color:  rgb(36, 98, 211);
+
+  color: white;
+  font-size: 17px;
+}
+
+
+
+.selectdomain{
+  display: inline;
+  margin-left: 250px;
+}
+
+.getdomain{
+  border-radius: 4px;
+  margin-left: 30px;
+}
+
+.available{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+
+
+#domaincart {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 17px;
+  border-radius: 40px;
+
+}
+
+.dcontainer {
+
+  color: white;
+  padding: 30px 0;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+}
+.dinner-container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(36, 98, 211);
+  padding: 20px 30px;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.d-avail{
+  display: flex;
+  align-items: center;
+}
+
+.d-availprice{
+    margin-right: 20px;
 }
