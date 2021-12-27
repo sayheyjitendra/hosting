@@ -1,6 +1,11 @@
 const getDomain = document.getElementById("getdomain");
 const inputValue = document.getElementById("domain");
 const available = document.querySelector(".available");
+const dcontainer = document.querySelector(".dcontainer")
+const InputDname = document.querySelector(".d-name")
+const dAvail = document.querySelector(".d-avail")
+const dUnAvail = document.querySelector(".d-unavail")
+
 
 let domainName = "";
 
@@ -25,11 +30,17 @@ function loadData() {
       console.log(apiData);
 
       if (apiData == "UNAVAILABLE") {
-        available.innerHTML = `${domainName} is already registered. Try another domain name!!`;
+        dcontainer.classList.remove("hidden")
+        dUnAvail.classList.remove("hidden")
+        InputDname.innerHTML = `${domainName} is already registered. Try another domain name!!`;
       }
 
       else if(apiData == "AVAILABLE"){
-        available.innerHTML = `${domainName} is available to register. Get It Now `;
+        dcontainer.classList.remove("hidden")
+        dAvail.classList.remove("hidden")
+        dUnAvail.classList.add("hidden")
+
+        InputDname.innerHTML = `${domainName} is available to register. Get It Now `;
 
       }
     }
@@ -37,7 +48,7 @@ function loadData() {
 
   xhttp.open(
     "GET",
-    // `https://www.whoisxmlapi.com/whoisserver/WhoisService?apiKey=at_eggyyzHibsEgWkBwWmj6OeyglHXlW&domainName=${domainName}&outputFormat=JSON&da=1`
+    `https://www.whoisxmlapi.com/whoisserver/WhoisService?apiKey=at_eggyyzHibsEgWkBwWmj6OeyglHXlW&domainName=${domainName}&outputFormat=JSON&da=1`
   );
   xhttp.send();
 }

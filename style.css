@@ -65,6 +65,13 @@ li {
 
 .signup {
   padding: 10px 20px;
+  margin-right: 60px;
+  background: none;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 10px 50px;
 }
 
 #cc {
