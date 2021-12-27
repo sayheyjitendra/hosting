@@ -198,8 +198,6 @@ button.pricing {
   display: block;
 }
 
-.price-box h4 {
-}
 
 .price-box.price-box-premium {
   background: rgb(36, 98, 211);
@@ -484,11 +482,6 @@ i {
 
 #domains{
   min-height: 80vh;
-}
-
-.d-textarea {
-  /* color: white;
-  background: rgb(36, 98, 211); */
 }
 
 .d-textarea > h2 {
