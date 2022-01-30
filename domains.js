@@ -32,6 +32,8 @@ function loadData() {
       if (apiData == "UNAVAILABLE") {
         dcontainer.classList.remove("hidden")
         dUnAvail.classList.remove("hidden")
+        dAvail.classList.add("hidden")
+
         InputDname.innerHTML = `${domainName} is already registered. Try another domain name!!`;
       }
 

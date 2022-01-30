@@ -66,8 +66,8 @@ xhttp.onreadystatechange = function () {
 };
 
 // OPEN HTTP Request
-// xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
-// xhttp.send();
+xhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
+xhttp.send();
 
 // For toggling
 
@@ -96,10 +96,21 @@ const toggle = document.getElementById("toggle");
 const flexy = document.getElementById("flexy");
 const flexyy = document.getElementById("flexyy");
 
+
+
+jmonthly = document.querySelector("span.j-monthly")
+jannually = document.querySelector("span.j-annually")
+
+
 toggle.addEventListener("change", (e) => {
   flexy.classList.toggle("show-monthly");
   flexyy.classList.toggle("show-monthly");
+  jannually.classList.toggle("display-bold");
+  jmonthly.classList.toggle("display-bold");
+
+  
 });
+
 
 const bashm = document.querySelector("span.basicshared.monthly");
 const basha = document.querySelector("span.basicshared.annually");
